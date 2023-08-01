@@ -11,7 +11,7 @@ public interface AuthorService {
 
     Optional<Author> getAuthorById(Integer id);
 
-    Author saveAuthor(Author author);
+    void saveAuthor(Author author);
 
     void deleteAuthor(Integer id);
 

@@ -4,10 +4,8 @@ package com.s473618.services;
 import com.s473618.entities.Author;
 import com.s473618.repositories.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -27,8 +25,8 @@ public class AuthorServiceImpl implements AuthorService{
     }
 
     @Override
-    public Author saveAuthor(Author author){
-        return authorRepository.save(author);
+    public void saveAuthor(Author author){
+        authorRepository.save(author);
     }
 
     @Override

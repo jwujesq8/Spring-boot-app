@@ -33,7 +33,7 @@ public class Author {
     private String author_surname;
 
     @Column(nullable = true, length = 1000)
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private DateTime date_of_birth;
 
     @JsonIgnore

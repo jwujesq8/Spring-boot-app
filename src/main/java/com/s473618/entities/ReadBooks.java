@@ -23,7 +23,7 @@ public class ReadBooks implements Serializable {
     Book book;
 
     @Column(nullable = true, length = 1000)
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     DateTime date;
 
     public ReadBooks() {}
